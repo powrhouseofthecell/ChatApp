@@ -15,7 +15,7 @@
   </a>
 </p>
 
-> A simple chat app made with expressjs and socket.io
+> A simple chat app made with ExpressJS and socket.io
 
 ### 🏠 [Homepage](https://github.com/powrhouseofthecell/ChatApp#readme)
 
