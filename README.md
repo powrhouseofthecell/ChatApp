@@ -7,12 +7,6 @@
   <a href="https://github.com/powrhouseofthecell/ChatApp/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/powrhouseofthecell/ChatApp/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/powrhouseofthecell/Chat App" />
-  </a>
-  <a href="https://twitter.com/shahzuhaib\_" target="_blank">
-    <img alt="Twitter: shahzuhaib\_" src="https://img.shields.io/twitter/follow/shahzuhaib\_.svg?style=social" />
-  </a>
 </p>
 
 > A simple chat app made with ExpressJS and socket.io
@@ -37,8 +31,7 @@ npm run start
 
 👤 **Zuhaib**
 
--  Website: zuhaib.live
--  Twitter: [@shahzuhaib\_](https://twitter.com/shahzuhaib_)
+-  Website: [zuhaib.live](https://zuhaib.live)
 -  Github: [@powrhouseofthecell](https://github.com/powrhouseofthecell)
 -  LinkedIn: [@zuhaibnazir](https://linkedin.com/in/zuhaibnazir)
 
