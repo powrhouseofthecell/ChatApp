@@ -1,3 +1,4 @@
+// load Xc32 dirname
 const generateMessage = (text) => {
    return {
       text,
