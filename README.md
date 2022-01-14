@@ -46,4 +46,3 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [Zuhaib](https://github.com/powrhouseofthecell).<br />
-This project is [ISC](https://github.com/powrhouseofthecell/ChatApp/blob/master/LICENSE) licensed.
