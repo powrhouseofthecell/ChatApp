@@ -42,7 +42,7 @@ const autoscroll = () => {
    }
 };
 
-socket.on('message', (message) => {
+socket.on('message', message => {
    console.log(message);
    const html = Mustache.render(messageTemplate, {
       username: message.username,
@@ -53,7 +53,7 @@ socket.on('message', (message) => {
    autoscroll();
 });
 
-socket.on('locationMessage', (message) => {
+socket.on('locationMessage', message => {
    console.log(message);
    const html = Mustache.render(locationMessageTemplate, {
       username: message.username,
@@ -72,14 +72,14 @@ socket.on('roomData', ({ room, users }) => {
    document.querySelector('#sidebar').innerHTML = html;
 });
 
-$messageForm.addEventListener('submit', (e) => {
+$messageForm.addEventListener('submit', e => {
    e.preventDefault();
 
    $messageFormButton.setAttribute('disabled', 'disabled');
 
    const message = e.target.elements.message.value;
 
-   socket.emit('sendMessage', message, (error) => {
+   socket.emit('sendMessage', message, error => {
       $messageFormButton.removeAttribute('disabled');
       $messageFormInput.value = '';
       $messageFormInput.focus();
@@ -99,7 +99,7 @@ $sendLocationButton.addEventListener('click', () => {
 
    $sendLocationButton.setAttribute('disabled', 'disabled');
 
-   navigator.geolocation.getCurrentPosition((position) => {
+   navigator.geolocation.getCurrentPosition(position => {
       socket.emit(
          'sendLocation',
          {
@@ -114,7 +114,7 @@ $sendLocationButton.addEventListener('click', () => {
    });
 });
 
-socket.emit('join', { username, room }, (error) => {
+socket.emit('join', { username, room }, error => {
    if (error) {
       alert(error);
       location.href = '/';
